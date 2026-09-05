@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Event Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <h2>Event Manager</h2>
+
+    <div>
+
+        <a href="/login">
+            Login
+        </a>
+
+        <a href="/register">
+            Register
+        </a>
+
+    </div>
+
+</nav>
+
+
+<main class="dashboard">
+
+    <h1>Event Management System</h1>
+
+    <p>
+        Create, manage and discover events easily.
+    </p>
+
+    <br>
+
+    <a href="/events">
+        <button>
+            View Events
+        </button>
+    </a>
+
+</main>
+
+</body>
+
+</html>

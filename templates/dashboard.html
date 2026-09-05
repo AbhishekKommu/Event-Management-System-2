@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <h2>Event Management System</h2>
+
+    <div>
+
+        <a href="/events">
+            Events
+        </a>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+
+<main class="dashboard">
+
+    <h1>
+        Welcome, <span id="username"></span>
+    </h1>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Events</h3>
+            <p id="totalEvents">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Upcoming Events</h3>
+            <p id="upcomingEvents">0</p>
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Events</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <h2>Events</h2>
+
+    <div>
+        <a href="/dashboard">Dashboard</a>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+</nav>
+
+
+<main class="container">
+
+    <h1>Event Management</h1>
+
+    <button id="showFormBtn">
+        + Create Event
+    </button>
+
+
+    <section id="eventFormSection"
+             class="form-section hidden">
+
+        <h2>Create Event</h2>
+
+        <form id="eventForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Event Title"
+                required
+            >
+
+            <textarea
+                id="description"
+                placeholder="Description">
+            </textarea>
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <input
+                type="time"
+                id="time"
+                required
+            >
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Location"
+                required
+            >
+
+            <select id="category" required>
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option value="Conference">
+                    Conference
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+                <option value="Seminar">
+                    Seminar
+                </option>
+
+                <option value="Festival">
+                    Festival
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Save Event
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search events..."
+    >
+
+
+    <div id="eventsContainer"
+         class="events-grid">
+    </div>
+
+</main>
+
+
+<script src="{{ url_for('static', filename='js/events.js') }}"></script>
+
+</body>
+
+</html>

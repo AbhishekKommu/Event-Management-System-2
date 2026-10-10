@@ -24,6 +24,7 @@ Users register for their preferred event.
 Admin can create, update, and manage events.
 Admin can view registered participants.
 📂 Project Structure
+
 Event-Management-System/
 │
 ├── index.html
@@ -37,6 +38,7 @@ Event-Management-System/
 ├── style.css
 ├── script.js
 └── README.md
+
 
 
 Update the file structure according to your actual project.
